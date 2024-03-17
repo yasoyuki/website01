@@ -19,14 +19,14 @@ export default function SpaceType() {
                     <p className="text-xl text-center pt-5 pb-3">＼こんな方におすすめ！／</p>
                 </div>
                 <div className="flex justify-around md:justify-center md:gap-16">
-                    <div className="bg-blue-950 h-36 w-36 rounded-full flex items-center justify-center">
-                        <p className="text-white p-6 text-xs ">テキストテキストテキストテキストテキストテキストテキスト</p>
+                    <div className="bg-blue-950 h-32 w-32 lg:h-40 lg:w-40 rounded-full flex items-center justify-center">
+                        <p className="text-white p-4 text-xs lg:text-base">テキストテキストテキストテキストテキストテキスト</p>
                     </div>
-                    <div className="bg-blue-950 h-36 w-36 rounded-full flex items-center justify-center">
-                        <p className="text-white p-6 text-xs ">テキストテキストテキストテキストテキストテキストテキスト</p>
+                    <div className="bg-blue-950 h-32 w-32 lg:h-40 lg:w-40 rounded-full flex items-center justify-center">
+                        <p className="text-white p-4 text-xs lg:text-base">テキストテキストテキストテキストテキストテキスト</p>
                     </div>
-                    <div className="bg-blue-950 h-36 w-36 rounded-full flex items-center justify-center">
-                        <p className="text-white p-6 text-xs ">テキストテキストテキストテキストテキストテキストテキスト</p>
+                    <div className="bg-blue-950 h-32 w-32 lg:h-40 lg:w-40 rounded-full flex items-center justify-center">
+                        <p className="text-white p-4 text-xs lg:text-base">テキストテキストテキストテキストテキストテキスト</p>
                     </div>
                 </div>
             </div>
@@ -41,15 +41,15 @@ export default function SpaceType() {
                 <div>
                     <p className="text-xl text-center pt-5 pb-3">＼こんな方におすすめ！／</p>
                 </div>
-                <div className="flex justify-around  md:justify-center md:gap-16">
-                    <div className="bg-blue-950 h-36 w-36 rounded-full flex items-center justify-center">
-                        <p className="text-white p-6 text-xs ">テキストテキストテキストテキストテキストテキストテキスト</p>
+                <div className="flex justify-around md:justify-center md:gap-16">
+                    <div className="bg-blue-950 h-32 w-32 lg:h-40 lg:w-40 rounded-full flex items-center justify-center">
+                        <p className="text-white p-4 text-xs lg:text-base">テキストテキストテキストテキストテキストテキスト</p>
                     </div>
-                    <div className="bg-blue-950 h-36 w-36 rounded-full flex items-center justify-center">
-                        <p className="text-white p-6 text-xs ">テキストテキストテキストテキストテキストテキストテキスト</p>
+                    <div className="bg-blue-950 h-32 w-32 lg:h-40 lg:w-40 rounded-full flex items-center justify-center">
+                        <p className="text-white p-4 text-xs lg:text-base">テキストテキストテキストテキストテキストテキスト</p>
                     </div>
-                    <div className="bg-blue-950 h-36 w-36 rounded-full flex items-center justify-center">
-                        <p className="text-white p-6 text-xs ">テキストテキストテキストテキストテキストテキストテキスト</p>
+                    <div className="bg-blue-950 h-32 w-32 lg:h-40 lg:w-40 rounded-full flex items-center justify-center">
+                        <p className="text-white p-4 text-xs lg:text-base">テキストテキストテキストテキストテキストテキスト</p>
                     </div>
                 </div>
             </div>
@@ -65,19 +65,19 @@ export default function SpaceType() {
                     <p className="text-xl text-center pt-5 pb-3">＼こんな方におすすめ！／</p>
                 </div>
                 <div className="flex justify-around md:justify-center md:gap-16">
-                    <div className="bg-blue-950 h-36 w-36 rounded-full flex items-center justify-center ">
-                        <p className="text-white p-6 text-xs ">テキストテキストテキストテキストテキストテキストテキスト</p>
+                    <div className="bg-blue-950 h-32 w-32 lg:h-40 lg:w-40 rounded-full flex items-center justify-center">
+                        <p className="text-white p-4 text-xs lg:text-base">テキストテキストテキストテキストテキストテキスト</p>
                     </div>
-                    <div className="bg-blue-950 h-36 w-36 rounded-full flex items-center justify-center">
-                        <p className="text-white p-6 text-xs ">テキストテキストテキストテキストテキストテキストテキスト</p>
+                    <div className="bg-blue-950 h-32 w-32 lg:h-40 lg:w-40 rounded-full flex items-center justify-center">
+                        <p className="text-white p-4 text-xs lg:text-base">テキストテキストテキストテキストテキストテキスト</p>
                     </div>
-                    <div className="bg-blue-950 h-36 w-36 rounded-full flex items-center justify-center">
-                        <p className="text-white p-6 text-xs ">テキストテキストテキストテキストテキストテキストテキスト</p>
+                    <div className="bg-blue-950 h-32 w-32 lg:h-40 lg:w-40 rounded-full flex items-center justify-center">
+                        <p className="text-white p-4 text-xs lg:text-base">テキストテキストテキストテキストテキストテキスト</p>
                     </div>
                 </div>
             </div>
             <div className="flex items-center justify-center">
-                <button className="bg-lightblue hover:bg-blue-500 text-white m-10 text-xl py-3 w-72 h-12 lg:w-80 lg:h-20 lg:text-2xl border-white hover:border-transparent rounded-xl mx-auto" >詳しい料金表はこちら</button>
+                <button className="bg-lightblue hover:bg-blue-500 text-white mb-10 text-xl py-3 w-72 h-12 lg:w-80 lg:h-20 lg:text-2xl border-white hover:border-transparent rounded-xl mx-auto" >詳しい料金表はこちら</button>
             </div>
 
         </section>

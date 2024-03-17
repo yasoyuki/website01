@@ -14,10 +14,10 @@ export default function NewsTopic() {
         <p>NEWS</p>
       </div>
   <div>
-    <dl className="flex flex-col items-start w-10/12 pt-5 pb-9 mx-auto text-sm md:w-3/5 md:text-base">
+    <dl className="flex flex-col items-start w-10/12 pt-5 pb-9 mx-auto text-sm md:w-1/2 md:text-lg">
       {newsItems.map((item, index) => (
-        <div key={index} className="flex items-start w-full border-b border-gray-200 last:border-b-0 mt-3">
-          <div className="flex items-center mr-2">
+        <div key={index} className="flex items-start border-b border-gray-200 last:border-b-0 mt-3">
+          <div className="flex items-center mr-4">
             {index === 0 ? <p className="text-red-600">new!</p> : <p className="opacity-0">new!</p>}
           </div>
           <dt className="mr-2">{item.date}</dt>

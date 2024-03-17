@@ -7,7 +7,7 @@ export default function Access() {
                 <p>ACCESS MAP</p>
             </div>
             <img src="../../map.jpg" alt="マップ" className="w-3/4 mx-auto md:w-1/2" />
-            <div className="grid grid-cols-10 gap-4 text-lg justify-items-center py-9 md:flex md:justify-center md:gap-20 md:text-xl">
+            <div className="grid grid-cols-10 gap-4 text-sm justify-items-center py-9 md:flex md:justify-center md:gap-20 md:text-lg">
                 <div className="col-span-4">
                     <p>定休日<br />土日祝日・年末年始</p>
                     <br />
