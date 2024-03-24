@@ -164,3 +164,12 @@ body {
     transform: translateX(0);
 }
 
+.bg-blue-950 {
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 768px) {
+    .bg-blue-950 {
+        box-shadow: none;
+    }
+}
