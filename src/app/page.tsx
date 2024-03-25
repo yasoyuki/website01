@@ -15,7 +15,7 @@ const Home = () => {
     <section>
       <div>
       <Header />
-      <Carousel images={ImageData.images} interval={3200} />
+      <Carousel images={ImageData.images} interval={2400} />
       </div>
       <NewsTopic />
       <br />

@@ -164,7 +164,7 @@ body {
     transform: translateX(0);
 }
 
-.bg-blue-950 {
+.bg-round-shadow {
     box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.4);
 }
 
