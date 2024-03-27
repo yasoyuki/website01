@@ -8,7 +8,7 @@ export default function Faq() {
             <div className="flex items-center justify-center h-16 bg-lightblue text-2xl">
                 <p>FAQ</p>
             </div>
-            <div className="w-4/5 mx-auto lg:w-2/3">
+            <div className="w-4/5 mx-auto lg:w-2/3 mb-10">
                 <Accordion questions={Array.isArray(questionData) ? questionData : []} />
             </div>
         </section>

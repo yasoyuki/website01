@@ -175,13 +175,18 @@ body {
 }
 
 /* ホバーしてサイズアップ */
-.size-up {
-    transition: transform 300ms ease;
-  }
-  
-  .size-up:hover {
-    transform: scale(1.1);
-  }
+/* 画面幅が768px以下の場合に.size-upの効果を無効にする */
+
+@media (min-width: 768px){
+    .size-up {
+        transition: transform 300ms ease;
+      }
+      
+      .size-up:hover {
+        transform: scale(1.1);
+      }
+}
+
 
   /* 　アコーディオンなめらか */
   .accordion-content {

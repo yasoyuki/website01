@@ -23,10 +23,10 @@ export default function SpaceType() {
                         <p className="text-white p-3 text-xs lg:text-base">集中力を最大限に高めてタスクをこなしたい方</p>
                     </div>
                     <div className="bg-round-shadow  bg-blue-950 h-32 w-32 lg:h-48 lg:w-48  rounded-full flex items-center justify-center  size-up">
-                        <p className="text-white p-3 text-xs lg:text-base">出先で作業がしたい個人事業主・フリーランスの方</p>
+                        <p className="text-white p-4 text-xs lg:text-base">出先で作業がしたい個人事業主・フリーランスの方</p>
                     </div>
                     <div className="bg-round-shadow bg-blue-950 h-32 w-32 lg:h-48 lg:w-48 rounded-full flex items-center justify-center  size-up">
-                        <p className="text-white p-3 text-xs lg:text-base">プライベートな空間でオンライン通話や電話がしたい方</p>
+                        <p className="text-white p-4 text-xs lg:text-base">プライベートな空間でオンライン通話や電話がしたい方</p>
                     </div>
                 </div>
             </div>
