@@ -173,3 +173,23 @@ body {
         box-shadow: none;
     }
 }
+
+/* ホバーしてサイズアップ */
+.size-up {
+    transition: transform 300ms ease;
+  }
+  
+  .size-up:hover {
+    transform: scale(1.1);
+  }
+
+  /* 　アコーディオンなめらか */
+  .accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.8s ease-out;
+  }
+
+  .accordion-content.open {
+    max-height: 500px; /* 実際の最大高さに応じて調整 */
+  }

@@ -30,19 +30,17 @@ const AccordionItem = ({ title, text }: Question) => {
     }
 
     return (
-            <div className="border border-gray-500 p-3 mt-3 rounded-lg">
+            <div className="border border-gray-500 p-3 mt-8 rounded-lg">
                 <div className="flex justify-between">
                     <p>{title}</p><button onClick={toggleAccordion}
                     className="animation-rotate">▼</button>
                 </div>
-                {isOpen && (
-                    <div>
+                    <div className={`accordion-content ${isOpen ? 'open' : ''}`}>
                         <hr />
                         <div className="pt-5">
                             {text}
                         </div>
                     </div>
-                )}
             </div>
     )
 

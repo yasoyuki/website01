@@ -8,7 +8,7 @@ export default function Facility() {
             </div>
 
             {/* 表 */}
-            <div className="mx-auto p-10 lg:w-2/3">
+            <div className="mx-auto p-10 lg:w-2/3 size-up">
                 <div className="text-center border border-gray-300">
                     <div className="grid grid-cols-2 divide-x divide-y divide-gray-300">
                         <div className="py-2 px-4 bg-blue-950 text-white text-lg">駐車場</div>
