@@ -77,7 +77,7 @@ export default function SpaceType() {
                 </div>
             </div>
             <div className="flex items-center justify-center">
-                <button className="bg-lightblue hover:bg-blue-500 text-white mb-10 text-xl py-3 w-72 h-12 lg:w-80 lg:h-20 lg:text-2xl border-white hover:border-transparent rounded-xl mx-auto" >詳しい料金表はこちら</button>
+                <button className="bg-lightblue hover:bg-blue-500 text-white mb-10 text-xl py-3 w-72 h-12 lg:w-80 lg:h-20 lg:text-2xl border-white hover:border-transparent rounded-xl mx-auto" >ご予約はこちら</button>
             </div>
 
         </section>

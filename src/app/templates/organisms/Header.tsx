@@ -6,9 +6,9 @@ import Menu_Header from '../Menu_Header';
 export const Header = () => {
     return (
         <section>
-            <div className=" bg-blue-950 h-24">
-                <div className="flex items-center justify-between text-white text-3xl px-5 pt-2 h-24">
-                    <h2>SHIBUYA<br />BUISINESS</h2>
+            <div className="bg-navy h-24">
+                <div className="flex items-center justify-between text-white text-3xl px-8 h-24">
+                    <h2 className='custom-line-height'>SHIBUYA<br />BUISINESS</h2>
                     <div>
                         <Menu_Header />
                     </div>

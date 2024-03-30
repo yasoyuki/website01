@@ -10,7 +10,8 @@ module.exports = {
         xs: '0.85rem',
       },
       colors: {
-        'lightblue': '#1AD7DB'
+        'navy': '#264A91',
+        'lightblue': '#65A6D3'
       },
     },
     
