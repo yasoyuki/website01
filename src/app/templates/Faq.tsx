@@ -5,7 +5,7 @@ import questionData from '../json/question.json';
 export default function Faq() {
     return (
         <section id="faq">
-            <div className="flex items-center justify-center h-16 bg-lightblue text-2xl">
+            <div className="flex items-center justify-center h-16 bg-lightblue text-2xl mt-20">
                 <p>FAQ</p>
             </div>
             <div className="w-4/5 mx-auto lg:w-2/3 mb-10">

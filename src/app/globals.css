@@ -8,6 +8,22 @@
     box-sizing: border-box;
 }
 
+/* GoToTOP追従ボタン start */
+.go-to-top {
+    position: fixed; /* 画面に固定 */
+    bottom: 12px; /* 下から20pxの位置 */
+    left: 12px; /* 右から20pxの位置 */
+    z-index: 1000; /* 他の要素より前面に表示 */
+    padding: 10px 20px;
+    color: white; /* テキスト色 */
+    border: none;
+    cursor: pointer;
+    border-radius: 5px; /* 角丸 */
+  }
+
+/* GoToTOP追従ボタン end */
+
+
 /* 特定のp要素に適用する例 */
 p.custom-line-height {
     line-height: 2;
@@ -19,22 +35,7 @@ h2.custom-line-height {
     /* 2倍の行間隔 */
 }
 
-/* トグルスイッチの基本スタイル */
-.toggle-switch {
-    position: relative;
-    display: inline-block;
-    width: 60px;
-    height: 34px;
-}
-
-/* 隠しチェックボックス */
-.toggle-switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-
-/* スライダー */
+/* スライダー start*/
 .slider {
     position: absolute;
     cursor: pointer;
@@ -78,58 +79,16 @@ input:checked+.slider:before {
 
 .slider.round:before {
     border-radius: 50%;
-}
+} 
+/* スライダー end*/
 
-/* styles/globals.css */
-body {
-    --background-color: #fff;
-    --text-color: #333;
-}
 
-body.dark-mode {
-    --background-color: #333;
-    --text-color: #cdcdcd;
-}
-
-body {
-    background-color: var(--background-color);
-    color: var(--text-color);
-}
-
-.header {
-    --background-color: #939393;
-    --text-color: #ffffff;
-}
-
-.header.dark-mode {
-    --background-color: #5f5f5f;
-    --text-color: #2f2f2f;
-}
-
-.header {
-    background-color: var(--background-color);
-    color: var(--text-color);
-}
-
-.footer {
-    --background-color: #939393;
-    --text-color: #ffffff;
-}
-
-.footer.dark-mode {
-    --background-color: #5f5f5f;
-    --text-color: #2f2f2f;
-}
-
-.footer {
-    background-color: var(--background-color);
-    color: var(--text-color);
-}
-
+/* 黒透明背景 */
 .bg-semi-transparent-black {
     background-color: rgba(0, 0, 0, 0.6);
 }
 
+/* FVカルーセル start */
 .carousel {
     position: relative;
     width: 100%;
@@ -185,26 +144,14 @@ body {
         box-shadow: none;
     }
 }
-
-/* ホバーしてサイズアップ */
-/* 画面幅が768px以下の場合に.size-upの効果を無効にする */
-
-@media (min-width: 768px) {
-    .size-up {
-        transition: transform 300ms ease;
-    }
-
-    .size-up:hover {
-        transform: scale(1.1);
-    }
-}
+/* FVカルーセル end */
 
 
-/* 　アコーディオンなめらか */
+/* 　アコーディオン start */
 .accordion-content {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.8s ease-out;
+    transition: max-height 0.5s ease-out;
 }
 
 .accordion-content.open {
@@ -212,19 +159,88 @@ body {
     /* 実際の最大高さに応じて調整 */
 }
 
-/* globals.css または適切なCSSファイルに追加 */
 .group:hover .hover-target {
     opacity: 1;
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
-  }
-  
-  .hover-target {
+}
+
+.hover-target {
     opacity: 0;
     transition: opacity 0.3s, transform 0.3s;
     position: absolute;
     bottom: 5px;
     right: 0;
-    /* 初期状態のスタイルを設定 */
+}
+
+/* 　アコーディオン end */
+
+
+/* スペースタイプ start*/
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.image-container img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+}
+
+/* 共通のoverlayスタイル */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.hover-effect-1:hover .overlay {
+    background-color: rgba(199, 130, 0, 0.5);
+    /* 透明なオレンジ */
+    opacity: 1;
+}
+
+.hover-effect-2:hover .overlay {
+    background-color: rgba(0, 28, 185, 0.5);
+    /* 透明な青 */
+    opacity: 1;
+}
+
+.hover-effect-3:hover .overlay {
+    background-color: rgba(3, 155, 97, 0.5);
+    /* 透明な青 */
+    opacity: 1;
+}
+/* スペースタイプ end*/
+
+
+/* 各種プランのフェイドアップ */
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(200px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
+  
+  .fadeIn {
+    animation-name: fadeIn;
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+  }
+
