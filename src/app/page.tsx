@@ -9,6 +9,8 @@ import ImageData from "./json/image.json";
 import { Footer } from "./templates/organisms/Footer";
 import { Header } from "./templates/organisms/Header";
 import { GoToTOP } from "./templates/organisms/GoToTop";
+import Hamburger from "./templates/organisms/Hamburger";
+import CatchCopy from "./templates/CatchCopy";
 
 const Home = () => {
   return (
@@ -16,9 +18,12 @@ const Home = () => {
       <div className="go-to-top">
         <GoToTOP />
       </div>
-      <div>
+      <div className="fix-menu">
         <Header />
-        <Carousel images={ImageData.images} interval={2400} />
+      </div>
+      <div className="mt-20">
+      <Carousel images={ImageData.images} interval={2400} />
+      <CatchCopy />
       </div>
       <NewsTopic />
       <br />

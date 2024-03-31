@@ -10,29 +10,53 @@
 
 /* GoToTOP追従ボタン start */
 .go-to-top {
-    position: fixed; /* 画面に固定 */
-    bottom: 12px; /* 下から20pxの位置 */
-    left: 12px; /* 右から20pxの位置 */
-    z-index: 1000; /* 他の要素より前面に表示 */
+    position: fixed;
+    bottom: 12px;
+    /* 右から20pxの位置 */
+    z-index: 1000;
     padding: 10px 20px;
-    color: white; /* テキスト色 */
+    color: white;
     border: none;
     cursor: pointer;
-    border-radius: 5px; /* 角丸 */
-  }
-
+    border-radius: 5px;
+}
 /* GoToTOP追従ボタン end */
+
+
+/* ハンバーガー start */
+.fix-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* 他の要素よりも前面に表示 */
+    background-color: #fff; /* 背景色はお好みで */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2); /* 下部に影をつける（オプション） */
+}
+
+.hamburger {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transform: translateY(-100%);
+    transition: transform 0.5s ease-out;
+    z-index: 1000;
+}
+
+.hamburger.open {
+    transform: translateY(0%);
+}
+/* ハンバーガー end */
 
 
 /* 特定のp要素に適用する例 */
 p.custom-line-height {
     line-height: 2;
-    /* 2倍の行間隔 */
-}
+}   
 
 h2.custom-line-height {
     line-height: 0.8;
-    /* 2倍の行間隔 */
 }
 
 /* スライダー start*/
@@ -72,17 +96,6 @@ input:checked+.slider:before {
     transform: translateX(26px);
 }
 
-/* 丸みを帯びたスライダー */
-.slider.round {
-    border-radius: 34px;
-}
-
-.slider.round:before {
-    border-radius: 50%;
-} 
-/* スライダー end*/
-
-
 /* 黒透明背景 */
 .bg-semi-transparent-black {
     background-color: rgba(0, 0, 0, 0.6);
@@ -92,9 +105,28 @@ input:checked+.slider:before {
 .carousel {
     position: relative;
     width: 100%;
-    height: 400px;
+    height: 600px;
     /* 必要に応じて調整 */
     overflow: hidden;
+}
+
+/* カルーセルのオーバーレイ */
+.carousel-item .carousel-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* 半透明の黒色 */
+    z-index: 1;
+    /* テキストよりも背景画像の上に表示されるように */
+}
+
+.carousel-item .carousel-text {
+    z-index: 2;
+    /* オーバーレイよりも前面に表示されるように */
+    /* その他のスタイリング */
 }
 
 .carousel-item {
@@ -144,6 +176,16 @@ input:checked+.slider:before {
         box-shadow: none;
     }
 }
+
+/* カルーセル上のテキスト */
+.carousel-item .carousel-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
 /* FVカルーセル end */
 
 
@@ -214,13 +256,11 @@ input:checked+.slider:before {
 
 .hover-effect-2:hover .overlay {
     background-color: rgba(0, 28, 185, 0.5);
-    /* 透明な青 */
     opacity: 1;
 }
 
 .hover-effect-3:hover .overlay {
     background-color: rgba(3, 155, 97, 0.5);
-    /* 透明な青 */
     opacity: 1;
 }
 /* スペースタイプ end*/
@@ -229,18 +269,53 @@ input:checked+.slider:before {
 /* 各種プランのフェイドアップ */
 @keyframes fadeIn {
     from {
-      opacity: 0;
-      transform: translateY(200px);
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+    animation-duration: 1.2s;
+    animation-fill-mode: both;
+}
+
+/* 左右からのフェイドイン */
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(100%); /* 右から */
     }
     to {
-      opacity: 1;
-      transform: translateY(0);
+        opacity: 1;
+        transform: translateX(0);
     }
-  }
-  
-  .fadeIn {
-    animation-name: fadeIn;
-    animation-duration: 1.5s;
-    animation-fill-mode: both;
-  }
+}
 
+.fadeInRight {
+    animation-name: fadeInRight;
+    animation-duration: 1.2s;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100%); /* 左から */
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.fadeInLeft {
+    animation-name: fadeInLeft;
+    animation-duration: 1.2s;
+    animation-fill-mode: both;
+}

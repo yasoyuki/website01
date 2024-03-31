@@ -1,35 +1,9 @@
-"use client"
-
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 import "../globals.css";
+import RightSideFadeIn from './organisms/RightSideFadeIn';
+import LeftSideFadeIn from './organisms/LeftSideFadeIn';
 
 export default function Concept() {
-    const leftImageRef = useRef<HTMLImageElement | null>(null);
-    const rightImageRef = useRef<HTMLImageElement | null>(null);
-
-    useEffect(() => {
-        const handleScroll = () => {
-            if (!leftImageRef.current || !rightImageRef.current) return;
-            
-            const leftImagePos = leftImageRef.current.getBoundingClientRect().top;
-            const rightImagePos = rightImageRef.current.getBoundingClientRect().top;
-            const screenPos = window.innerHeight;
-
-            if (leftImagePos < screenPos) {
-                leftImageRef.current.classList.add('animate-slide-in-left');
-            }
-
-            if (rightImagePos < screenPos) {
-                rightImageRef.current.classList.add('animate-slide-in-right');
-            }
-        };
-
-        window.addEventListener('scroll', handleScroll);
-
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, []);
 
     return (
         <section id="concept">
@@ -43,13 +17,17 @@ export default function Concept() {
                     </br>ここでは、多様なバックグラウンドを持つ人々が集い、互いに刺激を受けながら、新たなプロジェクトやビジネスを生み出すための理想的な環境を提供します。</p>
                 </div>
             </div>
-            <div className="flex flex-wrap justify-center py-8">
-                <div ref={leftImageRef} className="hidden-slide-left md:w-1/2">
-                    <img src="../../003.jpg" alt="コンセプトビュー" className="w-screen object-cover h-60 lg:h-84" />
-                </div>
-                <div ref={rightImageRef} className="hidden-slide-right md:w-1/2">
-                    <img src="../../004.jpg" alt="コンセプトビュー" className="w-screen object-cover h-60 lg:h-84" />
-                </div>
+            <div className="w-full flex justify-center items-center py-8">
+                <LeftSideFadeIn>
+                    <div>
+                        <img src="../../003.jpg" alt="コンセプトビュー" className="w-screen object-cover h-60 lg:h-84" />
+                    </div>
+                </LeftSideFadeIn>
+                <RightSideFadeIn>
+                    <div>
+                        <img src="../../004.jpg" alt="コンセプトビュー" className="w-screen object-cover h-60 lg:h-84" />
+                    </div>
+                </RightSideFadeIn>
             </div>
         </section>
     );

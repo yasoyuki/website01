@@ -15,13 +15,13 @@ export default function Access() {
                         loading="lazy"
                         referrerPolicy="no-referrer-when-downgrade">
                     </iframe>
-                <div className="flex justify-center w-4/5 gap-8 text-sm md:text-base mx-auto py-9 bg-gray-200 rounded-md border-2 border-lightblue mt-6 lg:w-1/3 lg:flex-col lg:text-lg">
-                    <div className="lg:w-2/3 md:mx-auto">
+                <div className="flex justify-center w-4/5 gap-8 text-sm md:text-base mx-auto py-9 bg-gray-200 rounded-md border-2 border-lightblue mt-6 lg:w-1/3 lg:flex-col lg:text-lg lg:mr-6">
+                    <div className="lg:w-2/3 md:mx-auto pl-2 lg:pl-0">
                         <p>定休日<br />土日祝日・年末年始</p>
                         <br />
                         <p>営業時間<br />8:00〜23:00</p>
                     </div>
-                    <div className="lg:w-2/3 md:mx-auto">
+                    <div className="lg:w-2/3 md:mx-auto pr-2 lg:pr-0">
                         <p>180-0022<br />東京都渋谷区渋谷町9-99-9<br />渋谷ストラクチャービル9F</p>
                         <br />
                         <p>TEL:XX-XXXX-XXXX<br />e-mail:XXXXX@ggg.com</p>
