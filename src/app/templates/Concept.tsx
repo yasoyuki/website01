@@ -17,7 +17,7 @@ export default function Concept() {
                     </br>ここでは、多様なバックグラウンドを持つ人々が集い、互いに刺激を受けながら、新たなプロジェクトやビジネスを生み出すための理想的な環境を提供します。</p>
                 </div>
             </div>
-            <div className="w-full flex justify-center items-center py-8">
+            <div className="w-full flex flex-col lg:flex-row justify-center items-center py-8">
                 <LeftSideFadeIn>
                     <div>
                         <img src="../../003.jpg" alt="コンセプトビュー" className="w-screen object-cover h-60 lg:h-84" />
