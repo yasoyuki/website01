@@ -27,7 +27,7 @@ export default function Hamburger({ isMenuOpen, setIsMenuOpen }: { isMenuOpen: b
                 <li className="flex items-center justify-center flex-grow py-4 hover:bg-white hover:text-lightblue" onClick={closeMenu}><a href="#accessmap">ACCESS MAP</a></li>
                 <li className="flex items-center justify-center flex-grow py-4 hover:bg-white hover:text-lightblue" onClick={closeMenu}><a href="#faq">FAQ</a></li>
             </ul>
-            <Link href="/resister" className="flex justify-center">
+            <Link href="/register" className="flex justify-center">
                 <button className="bg-white hover:bg-navy text-navy hover:text-white text-base py-2 px-10 hover:border-transparent rounded-full mb-10 w-auto">会員登録へ</button></Link>
             </div>
         </section>
